@@ -1,0 +1,118 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+header {
+    background-color: rgb(201, 175, 141);
+    text-align: center;
+    color: rgb(122, 49, 0);
+}
+
+.keywords {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    text-align: center;
+    background-color: #ffffff;
+    font-size: small;
+}
+
+.menu {
+    background-color: #ffffff;
+    text-align: center;
+}
+
+
+.menu ul li {
+    list-style-type: none;
+}
+
+.menu ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+.menu ul li {
+	display: inline;
+	margin-right: 20px;
+}
+
+.menu ul li a {
+	text-decoration: none;
+	color: rgb(122, 49, 0);
+}
+
+.menu ul li a:hover {
+	text-decoration: underline;
+    color: #000000;
+}
+
+.main, .main2, .main3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 10px;
+}
+
+.vs-bar {
+    padding: 0;
+    text-align: center;
+    background-color: rgb(201, 175, 141);
+}
+
+h1, h2, h3, footer {
+    color: rgb(122, 49, 0);
+}
+
+section, div {
+    text-align: center;
+}
+
+.dgrid2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 10px;
+    margin: 10px;
+}
+
+.gray {
+    background-color: rgb(201, 175, 141);
+    margin: 10px;
+}
+
+section {
+    background-color: beige;
+}
+
+img {
+    width: 50%;
+    height: auto;
+}
+
+.pbeige {
+    background-color: beige;
+    margin: 5px;
+}
+
+footer {
+	padding: 20px;
+	text-align: center;
+    background-color: rgb(201, 175, 141);
+}
+
+@media (max-width: 768px) {
+	.main, .main2 {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media (max-width: 576px) {
+	.main, .main2 {
+		grid-template-columns: repeat(1, 1fr);
+	}
+}
